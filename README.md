@@ -1,2 +1,2 @@
 # python_Projects
-Python Projects that I am working on
+Python projects that I am working on

@@ -20,6 +20,8 @@ def move(old, new):
         new = 'C:\\Users\Arran\Documents\GitHub\solidMech'
     if old[0] == 'py':
         old = 'C:\\Users\Arran\AppData\Local\Programs\Python\Python36' + '\\' + old[1]
+    if old[0] == 'MatLab':
+        old = 'C:\\Users\Arran\Documents\MATLAB\\' + old[1]
 
     print('The old path is %s' % old)
     print('The new path is %s' % new)
@@ -28,7 +30,7 @@ def move(old, new):
     filePath = os.path.abspath(old)      # Gets path for file
     shutil.copy(os.path.abspath(filePath), os.path.abspath(new))  # Moves file into appropriate folder
 
-if len(sys.argv) > 2:
+if len(sys.argv) > 3:
     ogpath = sys.argv[1:3]
     newpath = sys.argv[3]
 else:

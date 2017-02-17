@@ -24,7 +24,7 @@ def move(old, new):
     print('The old path is %s' % old)
     print('The new path is %s' % new)
     # Move files/folders
-    print('Moving %s to %s' % (old, new))
+    print('Copying %s to %s' % (old, new))
     filePath = os.path.abspath(old)      # Gets path for file
     shutil.copy(os.path.abspath(filePath), os.path.abspath(new))  # Moves file into appropriate folder
 
